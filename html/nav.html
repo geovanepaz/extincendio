@@ -1,0 +1,47 @@
+<!-- Collect the nav links, forms, and other content for toggling -->
+<nav class="navbar navbar-default">
+
+    <ul  class="nav nav-pills" class="col-md-12">
+        <li  role="presentation" class="active"  ><a href="#" id="inicial" >Home</a></li>
+
+        <li role="presentation" class="dropdown" >
+            <a id="menu" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                Cadastrar <span class="caret"></span>
+                <ul class="dropdown-menu">
+                    <?php
+
+                    if($_SESSION['usuario']== "12345"){ ?>
+                    <li role="presentation"  ><a href="#" id="IncluirUsuario">Usuario</a></li>
+                    <?php
+                    }else{
+                     ?>
+                    <li class="disabled" class="dropdown-header"  ><a href="#" id="proibido">Usuario</a></li>
+                    <?php } ?>
+                    <li role="presentation"><a href="#" id="inclurProduto">Produto</a></li>
+                    <li role="presentation"><a href="#" id="incluirCliente">Cliente</a></li>
+                </ul>
+        </li>
+
+        <li role="presentation" class="dropdown" >
+            <a id="menu" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                Pesquisar <span class="caret"></span>
+                <ul class="dropdown-menu">
+
+                    <?php
+
+                    if($_SESSION['usuario']== "12345"){ ?>
+                    <li role="presentation"><a href="#" id="listarUsuario">Usuario</a></li>
+                    <?php
+                    }else{
+                     ?>
+                    <li class="disabled" class="dropdown-header"  ><a href="#" id="proibido">Usuario</a></li>
+                    <?php } ?>
+                    <li role="presentation"><a href="#" id="listarProduto">Produtos</a></li>
+                    <li role="presentation"><a href="#" id="listarCliente">Cliente</a></li>
+                </ul>
+        </li>
+
+        <li role="presentation"><a href="saida.php" id="sair">Sair</a></li>
+        </li>
+    </ul>
+</nav>

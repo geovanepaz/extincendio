@@ -1,0 +1,90 @@
+ul{
+	padding-top: 1%;
+	margin-left: 1%;
+	
+}
+div{
+	font-family: 'Oxygen', sans-serif;
+	padding-top: 1%;
+
+	padding-left: 1%;
+
+	padding-right: 1%;
+
+	text-align: center;
+
+}
+
+#section-IncluirUsuario , #section-inclurProduto ,#section-incluirCliente ,#section-listarProduto,#section-sair,#section-listarUsuario,#section-listarCliente{
+	font-family: 'Oxygen', sans-serif;
+	display: none;
+
+}
+
+.events{
+
+	display: none;
+
+}
+
+.selectors {
+
+	display: none;
+
+}
+
+legend{
+
+	color: black;
+	text-align: center;
+
+}
+h2{
+
+	color: black;
+	text-align: center;
+	font: 12px;
+
+	
+
+}
+.error {
+	border-color:red;
+}
+
+.success {
+	border-color: #ccc;
+}
+span{
+	width: 1px;
+}
+#lixeira{
+	cursor:pointer;
+}
+
+
+.main-login{
+	
+	margin-top: 0px;
+	margin: 0 auto;
+    max-width: 500px;
+	padding-top: 0%; 
+ 	
+}
+.form-group {
+    margin-bottom: 2px;
+}
+.btn{
+	margin-top: 1%;
+}
+
+label{
+	    margin-bottom: 0px;
+}
+
+#msg-user-alert{
+	display: none;
+}
+#msg-user-alert{
+	display: none;
+}
